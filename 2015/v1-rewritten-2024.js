@@ -31,7 +31,7 @@
 
 	Userscript: https://greasyfork.org/scripts/521353
 	
-	EpicOS Repository: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/slowstone72/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 

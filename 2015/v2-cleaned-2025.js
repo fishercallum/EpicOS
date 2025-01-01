@@ -7,7 +7,7 @@
 	- Removed (some) bloat including some external scripts
 	Other than that, the original (bad) code structure remains.
 
-	A repository of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/slowstone72/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 
