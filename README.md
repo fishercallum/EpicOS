@@ -14,3 +14,9 @@ This repository hosts all versions of the bot developed between 2015 and 2024.
 #### [EpicOS (v1) - Rewritten Userscript](https://github.com/slowstone72/EpicOS/blob/main/2015/v1-rewritten-2024.js)
 
 - A rewritten userscript version of EpicOS (v1), created in 2024, optimized for modern browsers.
+
+### 2020
+
+#### [EpicOS (v10) - Node.js Rewrite](https://github.com/slowstone72/EpicOS/blob/main/2020-07-22-v10-node-js-rewrite)
+
+- An unfinished Node.js rewrite of EpicOS (v10).

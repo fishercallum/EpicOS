@@ -8,7 +8,7 @@
     Other than that, the original (bad) code structure remains.
 
     A rewritten version is available as a userscript: https://greasyfork.org/scripts/521353
-    A directory of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
+    A repository of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
 
     Callum Fisher <cf.fisher.bham@gmail.com>
 
