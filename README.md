@@ -20,3 +20,9 @@ This repository hosts all published versions of the bot.
 #### [EpicOS (v10) - Node.js Rewrite](https://github.com/slowstone72/EpicOS/blob/main/2020-07-22-v10-node-js-rewrite)
 
 - An unfinished Node.js rewrite of EpicOS (v10).
+
+### 2021
+
+#### [EpicOS 2021](https://github.com/slowstone72/EpicOS/tree/main/2021-12-09-node-js)
+
+- A Node.js version of EpicOS from 2021.
