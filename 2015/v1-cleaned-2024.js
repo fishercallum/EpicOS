@@ -7,8 +7,8 @@
     - Removed Squid's name collector script
     Other than that, the original (bad) code structure remains.
 
-    A rewritten version is available: https://greasyfork.org/scripts/521353
-    A directory of all published EpicOS projects is available: https://pastebin.com/QGyDuUGe
+    A rewritten version is available as a userscript: https://greasyfork.org/scripts/521353
+    A directory of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
 
     Callum Fisher <cf.fisher.bham@gmail.com>
 

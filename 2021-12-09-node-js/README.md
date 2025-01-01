@@ -9,4 +9,4 @@ The main app.js was archived & replaced while commands continued to be used & up
 
 ## Directory
 
-You can find a listing of all published EpicOS projects here: https://pastebin.com/QGyDuUGe
+You can find a listing of all published EpicOS projects here: https://github.com/slowstone72/EpicOS
