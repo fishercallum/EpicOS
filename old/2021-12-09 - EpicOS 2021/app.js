@@ -308,31 +308,7 @@ EOS.fun.isBot = function (name, _id) {
 	})
 }
 EOS.fun.circleFollow = function (part) { // by Ham's Music
-	var ypos;
-	var xpos;
-	var ascend = true;
-	var i = -500;
-	EOS.temp.followInterval = setInterval(function(){
-		if (!EOS.temp.cursorReserved) {
-			if (ascend == true){
-				i++
-				xpos = part.x + (0.01)*i;
-				ypos = 2*Math.sqrt(Math.pow(5,2) - Math.pow((xpos - part.x) ,2)) + (part.y);
-			}
-			else if (ascend == false){
-				i--;
-				xpos = part.x + (0.01)*i;
-				ypos = (part.y) - 2*(Math.sqrt(Math.pow(5,2) - Math.pow((xpos - part.x) ,2)));
-			}
-			if (i == 500){
-				ascend = false;
-			}
-			else if (i == -500){
-				ascend = true;
-			}
-			EOS.client.sendArray([{m: "m", x: xpos, y: ypos}]);
-		}
-	},5);
+	// redacted
 }
 EOS.fun.playMIDI = function (file) {
 	EOS.temp.playingMIDI = true;
