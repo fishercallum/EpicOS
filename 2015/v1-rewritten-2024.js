@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/slowstone72/EpicOS
 // @version      2024.12.31
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
@@ -28,8 +28,9 @@
     - Compiled separate message listeners into one
     - Changed the command handler to a switch statement
     - Removed unnecessary type coercion
-
-	A directory of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
+	
+	Userscript URL: https://greasyfork.org/scripts/521353
+	A repository of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
 
     Callum Fisher <cf.fisher.bham@gmail.com>
 
