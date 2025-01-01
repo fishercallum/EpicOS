@@ -1,9 +1,9 @@
 # EpicOS
 A command-based chat bot for [Multiplayer Piano](https://multiplayerpiano.net), originally created in 2015.
 
-This repository hosts all versions of the bot developed between 2015 and 2024.
+This repository hosts all published versions of the bot starting from 2015.
 
-## Directory
+## Project Directory
 
 ### 2015
 
