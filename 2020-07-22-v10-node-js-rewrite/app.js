@@ -1,5 +1,5 @@
 /*
-    "EpicOS 10 (unfinished rewrite)"
+    "EpicOS (v10) - Node.js Rewrite"
     app.js
     2020.07.22
 
