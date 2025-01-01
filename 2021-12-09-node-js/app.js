@@ -4,7 +4,6 @@
 	2021.12.09
 
 	This is a Node.js version of EpicOS from 2021 published for archival purposes.
-	It's modular but uses a poor communication method between commands & the main program (eval via worker messages).
 	It supports multiple instances and features a MIDI player. Most of this code was replaced or updated by 2023 in a new version.
 	It also features a attempts at bot identification and afk detection from before MultiplayerPiano.net added tags to bots and tags to afk users.
 	You might notice that the related messages are commented out as they became pretty annoying.
