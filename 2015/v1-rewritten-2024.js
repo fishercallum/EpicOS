@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      2024.12.31
+// @version      2025.01.01
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -22,7 +22,7 @@
 
 /*
 	"EpicOS (v1) - Rewritten"
-	2024.12.21 - 2024.12.31
+	2024.12.21 - 2025.01.01
 
 	This is a rewrite of the original 2015 web browser version of EpicOS. I have:
 	- Compiled separate message listeners into one
@@ -60,12 +60,13 @@
 	For more information, please refer to <https://unlicense.org/>
 */
 
-let startEOS = () => {
+const startEOS = () => {
 
 	// User-defined settings:
 
 	let cmdChar = '/'; // What a message should start with to be recognized as a command - You can change this to anything
-	let welcomeUsers = false; // Whether or not to welcome users that enter the room
+	let welcomeUsers = false; // Whether or not to welcome users that enter the room (true/false)
+	let sendStartUpMsg = false; // Whether or not to send a greeting message on start-up (true/false)
 
 	// Define settings:
 
@@ -87,7 +88,7 @@ let startEOS = () => {
 
 	// Send a start-up message:
 
-	// MPP.chat.send(`EpicOS (v1) is here! Type ${cmdChar}help for the command list.`);
+	if (sendStartUpMsg) MPP.chat.send(`EpicOS (v1) is here! Type ${cmdChar}help for the command list.`);
 
 	// Listen for 'hi' message & fetch _ID:
 
@@ -196,8 +197,8 @@ let startEOS = () => {
 	// Listen for new users:
 
 	MPP.client.on('participant added', msg => {
-      if (msg.id && msg.id === MPP.client.getOwnParticipant().id) return;
-      if (welcomeUsers) MPP.chat.send(`Welcome, ${msg.name}! Feel free to try out my commands by sending ${cmdChar}help`);
+		if (msg.id && msg.id === MPP.client.getOwnParticipant().id) return;
+		if (welcomeUsers) MPP.chat.send(`Welcome, ${msg.name}! Feel free to try out my commands by sending ${cmdChar}help`);
 	});
 
 
@@ -231,7 +232,7 @@ let startEOS = () => {
 // Start:
 
 if (!window.addEventListener) {
-    window.attachEvent('onload', startEOS);
+	window.attachEvent('onload', startEOS);
 } else {
-    window.addEventListener('load', startEOS);
+	window.addEventListener('load', startEOS);
 }
