@@ -96,7 +96,7 @@ const startEOS = () => {
 	}
 
 	let sendMessage = input => {
-		if (input === lastMessage.m && Date.now() - lastMessage.t < 120000) return;
+		if (input === lastMessage.m && Date.now() - lastMessage.t < 40000) return;
 		lastMessage = {
 			t: Date.now(),
 			m: input
