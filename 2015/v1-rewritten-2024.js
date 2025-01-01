@@ -29,8 +29,8 @@
     - Changed the command handler to a switch statement
     - Removed unnecessary type coercion
 	
-	Userscript URL: https://greasyfork.org/scripts/521353
-	A repository of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
+    Userscript URL: https://greasyfork.org/scripts/521353
+    A repository of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
 
     Callum Fisher <cf.fisher.bham@gmail.com>
 
