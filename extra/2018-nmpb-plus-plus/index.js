@@ -1,6 +1,6 @@
 /*
 	"NMPB++ for Multiplayer Piano"
-	NMPB++.js = Main app.
+	index.js - Main app.
 	2018
 
 	NMPB++ was a Node.js MIDI player for Multiplayer Piano inspired by Ste-Art's NMPB.
