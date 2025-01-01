@@ -171,7 +171,7 @@ const startEOS = () => {
 				MPP.chat.send(toBinary(input));
 				break;
 			case 'about':
-				MPP.chat.send('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2024.12.31 | Source: https://greasyfork.org/scripts/521353');
+				MPP.chat.send('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.01 | Source: https://greasyfork.org/scripts/521353');
 				break;
 				// Private commands:
 			case 'welcome':
