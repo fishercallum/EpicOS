@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      2025.01.01
+// @version      2025.01.02
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -18,18 +18,19 @@
 // @match        https://mpp.hri7566.info/*
 // @match        https://mppclone.hri7566.info/*
 // @grant        none
+// @downloadURL  https://greasyfork.org/scripts/521353
+// @updateURL    https://raw.githubusercontent.com/slowstone72/EpicOS/main/2015/v1-rewritten-2024.js
 // ==/UserScript==
 
 /*
 	"EpicOS (v1) - Rewritten"
-	2024.12.21 - 2025.01.01
+	2024.12.21 - 2025.01.02
 
 	This is a rewrite of the original 2015 web browser version of EpicOS. I have:
 	- Compiled separate message listeners into one
 	- Changed the command handler to a switch statement
 	- Removed unnecessary type coercion
 	
-	Userscript URL: https://greasyfork.org/scripts/521353
 	A repository of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
@@ -171,7 +172,7 @@ const startEOS = () => {
 				MPP.chat.send(toBinary(input));
 				break;
 			case 'about':
-				MPP.chat.send('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.01 | Source: https://greasyfork.org/scripts/521353');
+				MPP.chat.send('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.02 | Source: https://greasyfork.org/scripts/521353');
 				break;
 				// Private commands:
 			case 'welcome':
