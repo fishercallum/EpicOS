@@ -80,8 +80,9 @@ const startEOS = () => {
 		'lol',
 		'test',
 		'say',
-		'encode (Encode text)',
-		'decode (Decode text)',
+		'encode (Encode Text)',
+		'decode (Decode Text)',
+		'binary (Turn Text to Binary)',
 		'myinfo',
 		'8ball',
 		'about'
