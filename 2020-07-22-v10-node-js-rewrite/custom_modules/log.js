@@ -1,7 +1,9 @@
 /*
-    "EpicOS 10 (unfinished rewrite)"
+    "EpicOS (v10) - Node.js Rewrite"
     log.js - For handling recording of session logs.
    	2020.07.22
+
+    A repository of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
 
    	Callum Fisher <cf.fisher.bham@gmail.com>
 

@@ -1,9 +1,12 @@
 /*
-    "EpicOS 10 (unfinished rewrite)"
+    "EpicOS (v10) - Node.js Rewrite"
     index.js - This file acts a launcher for the application, by handling any missing essential files and then launching the main application.
     2020.07.22
 
+    A repository of all published EpicOS projects is available: https://github.com/slowstone72/EpicOS
+
    	Callum Fisher <cf.fisher.bham@gmail.com>
+
     This is free and unencumbered software released into the public domain.
 
     Anyone is free to copy, modify, publish, use, compile, sell, or
