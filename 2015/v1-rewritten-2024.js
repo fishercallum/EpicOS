@@ -88,9 +88,25 @@ const startEOS = () => {
 		'about'
 	].join(', ' + cmdChar);
 
+	// Define message send function:
+
+	let lastMessage = {
+		t: Date.now(),
+		m: ''
+	}
+
+	let sendMessage = input => {
+		if (input === lastMessage.m && Date.now() - lastMessage.t < 120000) return;
+		lastMessage = {
+			t: Date.now(),
+			m: input
+		}
+		MPP.chat.send(input);
+	}
+
 	// Send a start-up message:
 
-	if (sendStartUpMsg) MPP.chat.send(`EpicOS (v1) is here! Type ${cmdChar}help for the command list.`);
+	if (sendStartUpMsg) sendMessage(`EpicOS (v1) is here! Type ${cmdChar}help for the command list.`);
 
 	// Listen for 'hi' message & fetch _ID:
 
@@ -116,64 +132,64 @@ const startEOS = () => {
 		switch (cmd) {
 			// Public commands:
 			case 'help':
-				MPP.chat.send(`✨✨ EpicOS commands: ${commands} ✨✨`);
+				sendMessage(`✨✨ EpicOS commands: ${commands} ✨✨`);
 				break;
 			case 'test':
-				MPP.chat.send(`The bot is active and working correctly, ${name}!`);
+				sendMessage(`The bot is active and working correctly, ${name}!`);
 				break;
 			case 'myinfo':
 			case 'info':
-				MPP.chat.send(`Hi, ${name}. Your _ID is '${_id}'. ${_id === msg.p.id ? '' : 'Your ID is: \'' + msg.p.id + '\'. '}Your colour is ${color} (${new Color(color).getName()}). That's all I have!`);
+				sendMessage(`Hi, ${name}. Your _ID is '${_id}'. ${_id === msg.p.id ? '' : 'Your ID is: \'' + msg.p.id + '\'. '}Your colour is ${color} (${new Color(color).getName()}). That's all I have!`);
 				break;
 			case 'lol':
-				MPP.chat.send(`${name} laughs so hard they begin to choke. *Hands ${name} a glass of water.*`);
+				sendMessage(`${name} laughs so hard they begin to choke. *Hands ${name} a glass of water.*`);
 				break;
 			case 'say':
 			case 'echo':
 				if (!input) {
-					MPP.chat.send(`Please input a word/sentence for me to say! :P (Example: ${cmdChar}${cmd} Hello!)`);
+					sendMessage(`Please input a word/sentence for me to say! :P (Example: ${cmdChar}${cmd} Hello!)`);
 					return;
 				} else if (input.startsWith(cmdChar)) {
-					MPP.chat.send('Not today.');
+					sendMessage('Not today.');
 					return;
 				}
-				MPP.chat.send(input);
+				sendMessage(input);
 				break;
 			case '8ball':
 				if (!input) {
-					MPP.chat.send(`Please input something for the (ⁿᵒᵗ⁻ˢᵒ⁻ᵐᵃᵍᶦᶜ)8ball to respond to! (Example: ${cmdChar}${cmd} Are you clever?)`);
+					sendMessage(`Please input something for the (ⁿᵒᵗ⁻ˢᵒ⁻ᵐᵃᵍᶦᶜ)8ball to respond to! (Example: ${cmdChar}${cmd} Are you clever?)`);
 					return;
 				}
 				let responses = ['xD Lol no.', 'Hell no!', 'Are you kidding??? xD Lol no', 'Never.', 'Maybe.', 'Go away pls.', 'Yes. No question about it.', 'Yep, sure, whatever.', 'Did you say something?', 'Could you speak louder? I couldn\'t read that'];
-				MPP.chat.send(`8ball: ${responses[Math.floor(Math.random() * responses.length)]}`);
+				sendMessage(`8ball: ${responses[Math.floor(Math.random() * responses.length)]}`);
 				break;
 			case 'encode':
 				if (!input) {
-					MPP.chat.send(`Please input something for me to encode! (Example: ${cmdChar}${cmd} Hello!)`);
+					sendMessage(`Please input something for me to encode! (Example: ${cmdChar}${cmd} Hello!)`);
 					return;
 				}
-				MPP.chat.send(encode(input));
+				sendMessage(encode(input));
 				break;
 			case 'decode':
 				if (!input) {
-					MPP.chat.send(`Please input something for me to decode! (Example: ${cmdChar}${cmd} SGVsbG8h)`);
+					sendMessage(`Please input something for me to decode! (Example: ${cmdChar}${cmd} SGVsbG8h)`);
 					return;
 				}
 				try {
-					MPP.chat.send(`Here: ${decode(input)}`);
+					sendMessage(`Here: ${decode(input)}`);
 				} catch (err) {
-					MPP.chat.send('Try something that has already been encoded.');
+					sendMessage('Try something that has already been encoded.');
 				}
 				break;
 			case 'binary':
 				if (!input) {
-					MPP.chat.send(`Please input something for me to convert to binary (Example: ${cmdChar}${cmd} Hello!)`);
+					sendMessage(`Please input something for me to convert to binary (Example: ${cmdChar}${cmd} Hello!)`);
 					return;
 				}
-				MPP.chat.send(toBinary(input));
+				sendMessage(toBinary(input));
 				break;
 			case 'about':
-				MPP.chat.send('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.01 | Source: https://greasyfork.org/scripts/521353');
+				sendMessage('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.01 | Source: https://greasyfork.org/scripts/521353');
 				break;
 				// Private commands:
 			case 'welcome':
@@ -184,7 +200,7 @@ const startEOS = () => {
 					input = input.toLowerCase();
 					welcomeUsers = input === 'on';
 				}
-				MPP.chat.send(`Welcome messages are ${welcomeUsers ? 'on' : 'off'}.`);
+				sendMessage(`Welcome messages are ${welcomeUsers ? 'on' : 'off'}.`);
 				break;
 			case 'clear':
 				if (_id !== selfID) return;
@@ -194,13 +210,13 @@ const startEOS = () => {
 
 	});
 
-	// MPP.client.on("a", function(msg) { if (msg.a.split(' ')[0] == "hi" || msg.a.split(' ')[0] == "hey" || msg.a.split(' ')[0] == "hello") { if (msg.p._id == selfID) {} else { MPP.chat.send('EpicOS: Hi there, ' + msg.p.name + '!, how may i help you?') } }})
+	// MPP.client.on("a", function(msg) { if (msg.a.split(' ')[0] == "hi" || msg.a.split(' ')[0] == "hey" || msg.a.split(' ')[0] == "hello") { if (msg.p._id == selfID) {} else { sendMessage('EpicOS: Hi there, ' + msg.p.name + '!, how may i help you?') } }})
 
 	// Listen for new users:
 
 	MPP.client.on('participant added', msg => {
 		if (msg.id && msg.id === MPP.client.getOwnParticipant().id) return;
-		if (welcomeUsers) MPP.chat.send(`Welcome, ${msg.name}! Feel free to try out my commands by sending ${cmdChar}help`);
+		if (welcomeUsers) sendMessage(`Welcome, ${msg.name}! Feel free to try out my commands by sending ${cmdChar}help`);
 	});
 
 
