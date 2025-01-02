@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      2025.01.01
+// @version      2025.01.02
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -22,7 +22,7 @@
 
 /*
 	"EpicOS (v1) - Rewritten"
-	2024.12.21 - 2025.01.01
+	2024.12.21 - 2025.01.02
 
 	This is a rewrite of the original 2015 web browser version of EpicOS. I have:
 	- Compiled separate message listeners into one
@@ -68,6 +68,7 @@ const startEOS = () => {
 	let cmdChar = '/'; // What a message should start with to be recognized as a command - You can change this to anything
 	let welcomeUsers = false; // Whether or not to welcome users that enter the room (true/false)
 	let sendStartUpMsg = false; // Whether or not to send a greeting message on start-up (true/false)
+	let antiSpamTimeout = 40000; // Time in milliseconds before the bot can repeat its last chat message - Can be any value in milliseconds
 
 	// Define settings:
 
@@ -96,7 +97,7 @@ const startEOS = () => {
 	}
 
 	let sendMessage = input => {
-		if (input === lastMessage.m && Date.now() - lastMessage.t < 40000) return;
+		if (input === lastMessage.m && Date.now() - lastMessage.t < antiSpamTimeout) return;
 		lastMessage = {
 			t: Date.now(),
 			m: input
@@ -118,7 +119,7 @@ const startEOS = () => {
 
 	MPP.client.on('a', msg => {
 
-      selfID = MPP.client.getOwnParticipant()._id;
+		selfID = MPP.client.getOwnParticipant()._id;
 		// if (msg.p._id === selfID) return;
 		if (!msg.a.startsWith(cmdChar) || msg.a === cmdChar) return;
 
@@ -189,7 +190,7 @@ const startEOS = () => {
 				sendMessage(toBinary(input));
 				break;
 			case 'about':
-				sendMessage('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.01 | Source: https://greasyfork.org/scripts/521353');
+				sendMessage('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.02 | Source: https://greasyfork.org/scripts/521353');
 				break;
 				// Private commands:
 			case 'welcome':
@@ -218,7 +219,6 @@ const startEOS = () => {
 		if (msg.id && msg.id === MPP.client.getOwnParticipant().id) return;
 		if (welcomeUsers) sendMessage(`Welcome, ${msg.name}! Feel free to try out my commands by sending ${cmdChar}help`);
 	});
-
 
 	const toBinary = input => {
 		let output = '';
