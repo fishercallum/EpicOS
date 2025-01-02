@@ -26,3 +26,17 @@ This repository hosts all published versions of the bot.
 #### [EpicOS 2021](https://github.com/slowstone72/EpicOS/tree/main/2021-12-09-node-js)
 
 - A Node.js version of EpicOS from 2021.
+
+### Extras
+
+#### [Epic's Chat Bot](https://github.com/slowstone72/EpicOS/tree/main/extras/2017-epics-chat-bot)
+
+- An alternate bot for Multiplayer Piano from 2017.
+
+#### [Epic's Socket Bot](https://github.com/slowstone72/EpicOS/tree/main/extras/2017-epics-socket-bot)
+
+- A script from 2017 that splits [Ste-Art's MIDI player bot (NMPB)](https://nmpb-blog.blogspot.com/) into multiple bots to bypass Multiplayer Piano's note limit.
+
+#### [NMPB++](https://github.com/slowstone72/EpicOS/tree/main/extras/2018-nmpb-plus-plus)
+
+- A Node.js MIDI player from 2018, inspired by [Ste-Art's MIDI player bot (NMPB)](https://nmpb-blog.blogspot.com/).
