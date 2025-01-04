@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      2025.01.02
+// @version      2025.01.04
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -22,7 +22,7 @@
 
 /*
 	"EpicOS (v1) - Rewritten"
-	2024.12.21 - 2025.01.02
+	2024.12.21 - 2025.01.04
 
 	This is a rewrite of the original 2015 web browser version of EpicOS. I have:
 	- Compiled separate message listeners into one
@@ -229,7 +229,7 @@ const startEOS = () => {
 				let a = e % 2;
 				e = (e - a) / 2;
 				s = a + s;
-			} while (e != 0);
+			} while (e !== 0);
 			while (s.length < 8) {
 				s = '0' + s;
 			}
