@@ -1,6 +1,6 @@
 # EpicOS for Discord
 
-A barebones version of EpicOS for [Discord](https://discord.com/). Features a --temp message flag that auto-deletes your messages, sort of like temporary messages on WhatsApp and similar services.
+A barebones version of EpicOS for [Discord](https://discord.com/). Welcomes users to servers and features a --temp message flag that auto-deletes your messages, sort of like temporary messages on WhatsApp and similar services.
 
 ## 2023.01.06:
 
