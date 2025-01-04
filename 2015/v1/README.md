@@ -1,10 +1,10 @@
 # EpicOS (v1) [2015]
 
-## cleaned.js
+## cleaned-2024.js
 
 - The original version of EpicOS, created in 2015, preserved in all its tacked-together-by-a-nine-year-old glory - cleaned up slightly for publication in 2024.
 
-## rewritten-2024
+## rewritten-2024.js
 
 - A rewritten [userscript version](https://greasyfork.org/scripts/521353) of EpicOS (v1), created in 2024, optimized for modern browsers.
 
@@ -14,9 +14,9 @@ You can send /help to chat on Multiplayer Piano to see EpicOS' command list.
 
 #### Commands
 
-##### Public
+##### *Public*
 
-Commands everybody can use.
+###### Commands everybody can use.
 
 - /help - Displays the command list.
 - /lol - Displays a 'lol' laughing message.
@@ -28,9 +28,9 @@ Commands everybody can use.
 - /8ball - Asks the not-so-magic-8ball to answer your yes/no questions.
 - /about - Displays information about the bot.
 
-##### Private
+##### *Private*
 
-Commands only the bot operator (you) can use.
+###### Commands only the bot operator (you) can use.
 
 - /welcome - Toggles welcome messages when users join the room.
 - /clear - Clears the chat box for the bot operator.
