@@ -6,7 +6,7 @@
 
 ## rewritten-2024.js
 
-- A rewritten [userscript version](https://greasyfork.org/scripts/521353) of EpicOS (v1), created in 2024, optimized for modern browsers.
+- A rewritten userscript version of EpicOS (v1), created in 2024, optimized for modern browsers.
 
 After [installing EpicOS as a userscript](https://greasyfork.org/scripts/521353), you can send /help to chat on [Multiplayer Piano](https://multiplayerpiano.net) to see its command list.
 
