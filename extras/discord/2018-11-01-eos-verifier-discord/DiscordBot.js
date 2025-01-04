@@ -116,11 +116,11 @@ setTimeout(function() {
 				var js = msg.content.split(`${prefix}js`)[1].trim();
 				console.log(`${msg.author.username} is running code: ${js}`)
 					try {
- 						msg.reply(`\`\`\`javascript\n [S]: ${eval(js)}\`\`\``);
+						msg.reply(`\`\`\`javascript\n [S]: ${eval(js)}\`\`\``);
 					} catch (err) {
 						msg.reply(`\`\`\`javascript\n [E]: ${err}\`\`\``);
 					}
-  			}
+			}
 		}
 	});
 	console.log('Running bot code.');
