@@ -8,9 +8,7 @@
 
 - A rewritten [userscript version](https://greasyfork.org/scripts/521353) of EpicOS (v1), created in 2024, optimized for modern browsers.
 
-You can send /help to chat on [Multiplayer Piano](https://multiplayerpiano.net) to see the command list.
-
-[Install EpicOS as a userscript](https://greasyfork.org/scripts/521353) to get started.
+After [installing EpicOS as a userscript](https://greasyfork.org/scripts/521353), you can send /help to chat on [Multiplayer Piano](https://multiplayerpiano.net) to see its command list.
 
 ### Features
 
