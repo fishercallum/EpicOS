@@ -22,12 +22,13 @@
 
 /*
 	"EpicOS (v1) - Rewritten"
-	2024.12.21 - 2025.01.04
+	2024.12.21 - 2025.01.04W
 
 	This is a rewrite of the original 2015 web browser version of EpicOS. I have:
 	- Compiled separate message listeners into one
 	- Changed the command handler to a switch statement
 	- Removed unnecessary type coercion
+	- Added an anti-spam chat send function
 
 	Userscript: https://greasyfork.org/scripts/521353
 	
@@ -190,7 +191,7 @@ const startEOS = () => {
 				sendMessage(toBinary(input));
 				break;
 			case 'about':
-				sendMessage('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.02 | Source: https://greasyfork.org/scripts/521353');
+				sendMessage('EpicOS (v1) [2015] - Rewritten | 2024.12.21 - 2025.01.04 | Source: https://greasyfork.org/scripts/521353');
 				break;
 				// Private commands:
 			case 'welcome':
