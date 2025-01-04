@@ -1,49 +1,53 @@
 /*
-    "EpicOS for Discord"
+	"EpicOS for Discord"
 	DiscordBot - Main program.
-    2018.11.02
+	2018.11.02
 
-    This is a pretty barebones Node.js Discord version of EpicOS from 2018. Published for archival purposes.
-    It welcomed users to the server and featured a 'temporary message' command that would automatically delete your message.
+	This is a pretty barebones Node.js Discord version of EpicOS from 2018. Published for archival purposes.
+	It welcomed users to the server and featured a 'temporary message' command that would automatically delete your message.
+	I have:
+	- Standardized tab spaces.
+	- Removed secrets (user ids, role ids and bot tokens, etc.)
+	Other than that, the original (bad) code structure remains.
 
-    A directory of all published EpicOS projects is available: https://pastebin.com/QGyDuUGe
+	Repository: https://github.com/slowstone72/EpicOS
 
-    Callum Fisher <cf.fisher.bham@gmail.com>
+	Callum Fisher <cf.fisher.bham@gmail.com>
 
-    This is free and unencumbered software released into the public domain.
+	This is free and unencumbered software released into the public domain.
 
-    Anyone is free to copy, modify, publish, use, compile, sell, or
-    distribute this software, either in source code form or as a compiled
-    binary, for any purpose, commercial or non-commercial, and by any
-    means.
+	Anyone is free to copy, modify, publish, use, compile, sell, or
+	distribute this software, either in source code form or as a compiled
+	binary, for any purpose, commercial or non-commercial, and by any
+	means.
 
-    In jurisdictions that recognize copyright laws, the author or authors
-    of this software dedicate any and all copyright interest in the
-    software to the public domain. We make this dedication for the benefit
-    of the public at large and to the detriment of our heirs and
-    successors. We intend this dedication to be an overt act of
-    relinquishment in perpetuity of all present and future rights to this
-    software under copyright law.
+	In jurisdictions that recognize copyright laws, the author or authors
+	of this software dedicate any and all copyright interest in the
+	software to the public domain. We make this dedication for the benefit
+	of the public at large and to the detriment of our heirs and
+	successors. We intend this dedication to be an overt act of
+	relinquishment in perpetuity of all present and future rights to this
+	software under copyright law.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-    IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-    OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-    ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-    OTHER DEALINGS IN THE SOFTWARE.
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+	IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+	OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+	ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+	OTHER DEALINGS IN THE SOFTWARE.
 
-    For more information, please refer to <https://unlicense.org/>
+	For more information, please refer to <https://unlicense.org/>
 */
 
 const Discord = require('discord.js'); //Discord.js
 //const Database = require('Database')
 var admins = [
-    ''
+	''
 ];
 
 var channels = {
-    welcome: ''
+	welcome: ''
 }
 
 var roles = {
@@ -127,34 +131,34 @@ setTimeout(function() {
 		console.log(`(#${msg.channel.name}) ${msg.author.username}: ${msg.content}`);
 		DCbots[0].client.user.setActivity(DCbots[0].activity.name, { type: DCbots[0].activity.type });
 		if(msg.author.id !== DCbots[0].client.user.id)
-        if (admins.includes(msg.author.id)) {
-            if (msg.content.toLowerCase().substring(0, `${DMprefix}js`.length) == `${DMprefix}js`) {
-                var input = msg.content.split(`${DMprefix}js`)[1].trim();
+		if (admins.includes(msg.author.id)) {
+			if (msg.content.toLowerCase().substring(0, `${DMprefix}js`.length) == `${DMprefix}js`) {
+				var input = msg.content.split(`${DMprefix}js`)[1].trim();
 				console.log(`${msg.author.username} is running code: ${input}`)
-                    try {
-                        msg.reply(`\`\`\`javascript\n [S]: ${eval(input)}\`\`\``);
-                    } catch (err) {
-                        msg.reply(`\`\`\`javascript\n [E]: ${err}\`\`\``);
-                    }
-            }
-        }
-    });
+					try {
+						msg.reply(`\`\`\`javascript\n [S]: ${eval(input)}\`\`\``);
+					} catch (err) {
+						msg.reply(`\`\`\`javascript\n [E]: ${err}\`\`\``);
+					}
+			}
+		}
+	});
 	
 	DCbots[1].client.on('message', msg => {
 		DCbots[1].client.user.setActivity(DCbots[1].activity.name, { type: DCbots[1].activity.type });
 		if(msg.author.id == DCbots[1].client.user.id) return;
 		//admin commands:
-        if (admins.includes(msg.author.id)) {
+		if (admins.includes(msg.author.id)) {
 			//eval:
-            if (msg.content.toLowerCase().substring(0, `${prefix}eval`.length) == `${prefix}eval`) {
-                var input = msg.content.split(`${prefix}eval`)[1].trim();
+			if (msg.content.toLowerCase().substring(0, `${prefix}eval`.length) == `${prefix}eval`) {
+				var input = msg.content.split(`${prefix}eval`)[1].trim();
 				console.log(`${msg.author.username} is running code: ${input}`)
 				try {
 					msg.reply(`\`\`\`javascript\n [S]: ${eval(input)}\`\`\``);
-                } catch (err) {
+				} catch (err) {
 					msg.reply(`\`\`\`javascript\n [E]: ${err}\`\`\``);
 				}
-            }
+			}
 			//cleartemp:
 			if (msg.content.toLowerCase().substring(0, `${prefix}cleartemp`.length) == `${prefix}cleartemp`) {
 				var input = msg.content.split(`${prefix}cleartemp`)[1].trim();
@@ -177,7 +181,7 @@ setTimeout(function() {
 					msg.channel.send('Sorry, but that cannot be completed here.\nMaybe I don\'t have the "Manage Messages" permission here.');
 				}
 			}
-        }
+		}
 		
 		//regular commands:
 		//test:
@@ -219,6 +223,6 @@ setTimeout(function() {
 				msg.channel.send('Sorry, but your message cannot be deleted.\nMaybe I don\'t have the "Manage Messages" permission here.');
 			}
 		}
-    });
-    console.log('Running bot code.');
+	});
+	console.log('Running bot code.');
 }, 6000);
