@@ -47,7 +47,7 @@ var admins = [
 ];
 
 var channels = {
-    welcome: ''
+	welcome: ''
 }
 
 var roles = {
