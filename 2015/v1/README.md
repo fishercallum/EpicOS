@@ -24,6 +24,7 @@ After [installing EpicOS as a userscript](https://greasyfork.org/scripts/521353)
 - /say - Echoes the user's text input.
 - /encode - Encodes inputted text.
 - /decode - Decodes input.
+- /binary - Converts inputted text to binary.
 - /myinfo - Displays a user's information (_ID, ID if applicable and colour HEX & name).
 - /8ball - Asks the not-so-magic-8ball to answer your yes/no questions.
 - /about - Displays information about the bot.
