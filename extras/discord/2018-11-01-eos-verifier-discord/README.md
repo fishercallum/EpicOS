@@ -5,6 +5,7 @@ It welcomed users to a Discord server and assigned them bot/user roles.
 I have:
 - Standardized tab spaces.
 - Removed secrets (user ids, role ids and bot tokens, etc.)
+
 Other than that, the original (bad) code structure remains.
 
 ## Directory
