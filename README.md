@@ -78,7 +78,7 @@ Thanks to the following individuals for their contributions:
 - [ ۣۜCharly](https://github.com/charleprr) - Inspiration
 - JPDLD	- Suggestions, inspiration
 - Chris - Suggestions
-- Ste-Art - Inspiration (NMPB++)
+- [Ste-Art](https://github.com/ste-art) - Inspiration (NMPB++)
 - [Brandon Lockaby](https://github.com/brandon-lockaby) - Multiplayer Piano
 
 And many more who unknowingly inspired me. Thanks again.
