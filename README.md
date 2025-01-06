@@ -78,6 +78,7 @@ Thanks to the following individuals for their contributions and inspiration:
 - [ ۣۜCharly](https://github.com/charleprr) - Inspiration
 - JPDLD	- Suggestions, inspiration
 - Chris - Command
+
 And many more who unknowingly inspired me. Thanks again.
 
 *(If you'd like your name removed or changed, please let me know)*
