@@ -73,7 +73,7 @@ Thanks to the following individuals for their contributions:
 - Chacha - Help with code, suggestions
 - CitronSustain - Help with code, inspiration
 - Braden T - Help with code
-- Anon64 - Help with code, inspiration
+- [Anon64](https://github.com/Anon64) - Help with code, inspiration
 - Ham's Music - Help with code, suggestions
 - [ ۣۜCharly](https://github.com/charleprr) - Inspiration
 - JPDLD	- Suggestions, inspiration
