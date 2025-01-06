@@ -65,6 +65,8 @@
 
 const startEOS = () => {
 
+	console.log('[EpicOS (v1) - Rewritten v2025.01.06] Running.');
+
 	// User-defined settings:
 
 	let cmdChar = '/'; // What a message should start with to be recognized as a command - You can change this to anything
