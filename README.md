@@ -66,15 +66,18 @@ This repository homes all published versions of the bot.
 ## Thanks
 
 Thanks to the following individuals for their contributions and inspiration:
-- く8彡
-- SⱩΛȽȽΛǤɌIM
-- Electrashave
-- Logan
-- Chacha
-- CitronSustain
-- Braden T
-- Anon64
-- Ham's Music,
-- ۣۜCharly
-- JPDLD
-- Chris.
+- く8彡 - Help with code, inspiration
+- SⱩΛȽȽΛǤɌIM - Inspiration
+- electrashave - Help with code, inspiration
+- Logan - Help with code, inspiration
+- Chacha - Help with code, suggestions
+- CitronSustain - Help with code, inspiration
+- Braden T - Help with code
+- Anon64 - Help with code, inspiration
+- Ham's Music - Help with code, suggestions
+- [ ۣۜCharly](https://github.com/charleprr) - Inspiration
+- JPDLD	- Suggestions, inspiration
+- Chris - Command
+And many more who unknowingly inspired me. Thanks again.
+
+*(If you'd like your name removed or changed, please let me know)*
