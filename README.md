@@ -77,7 +77,7 @@ Thanks to the following individuals for their contributions:
 - Ham's Music - Help with code, suggestions
 - [ ۣۜCharly](https://github.com/charleprr) - Inspiration
 - JPDLD	- Suggestions, inspiration
-- Chris - Command
+- Chris - Suggestions
 - [Brandon Lockaby](https://github.com/brandon-lockaby) - Multiplayer Piano
 
 And many more who unknowingly inspired me. Thanks again.
