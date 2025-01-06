@@ -62,3 +62,19 @@ This repository homes all published versions of the bot.
 #### Requests
 
 - A Node.js MIDI player bot that replaced EpicOS on the 10th of November 2024. Users can play, upload and stop MIDI files of their choice.
+
+## Thanks
+
+Thanks to the following individuals for their contributions and inspiration:
+- く8彡
+- SⱩΛȽȽΛǤɌIM
+- Electrashave
+- Logan
+- Chacha
+- CitronSustain
+- Braden T
+- Anon64
+- Ham's Music,
+- ۣۜCharly
+- JPDLD
+- Chris.
