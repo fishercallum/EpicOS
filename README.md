@@ -65,7 +65,7 @@ This repository homes all published versions of the bot.
 
 ## Thanks
 
-Thanks to the following individuals for their contributions and inspiration:
+Thanks to the following individuals for their contributions:
 - く8彡 - Help with code, inspiration
 - SⱩΛȽȽΛǤɌIM - Inspiration
 - electrashave - Help with code, inspiration
