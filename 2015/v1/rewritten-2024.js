@@ -17,6 +17,7 @@
 // @match        *://piano.ourworldofpixels.com/*
 // @match        *://mpp.hri7566.info/*
 // @match        *://mppclone.hri7566.info/*
+// @match        *://smp-meow.com/*
 // @grant        none
 // ==/UserScript==
 
