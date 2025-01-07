@@ -7,11 +7,11 @@ This repository homes all published versions of the bot.
 
 ### 2015
 
-#### [EpicOS (v1) - Cleaned](https://github.com/slowstone72/EpicOS/blob/main/2015/v1-cleaned-2024.js)
+#### [EpicOS (v1) - Cleaned](https://github.com/slowstone72/EpicOS/blob/main/2015/v1/cleaned-2024.js)
 
 - The original version of EpicOS, created in 2015, preserved in all its tacked-together-by-a-nine-year-old glory - cleaned up slightly for publication in 2024.
 
-#### [EpicOS (v1) - Rewritten [Userscript]](https://github.com/slowstone72/EpicOS/blob/main/2015/v1-rewritten-2024.js)
+#### [EpicOS (v1) - Rewritten [Userscript]](https://github.com/slowstone72/EpicOS/blob/main/2015/v1/rewritten-2024.js)
 
 - A rewritten [userscript version](https://greasyfork.org/scripts/521353) of EpicOS (v1), created in 2024, optimized for modern browsers.
 
@@ -55,7 +55,7 @@ This repository homes all published versions of the bot.
 
 #### /talk
 
-- A Node.js bot created in November of 2023 that made use of Ollama & GPT4All to chat with users. Later converted into a HAL 9000 chat bot and fizzled out by the 27th of November, making way for a new version of EpicOS.
+- A Node.js bot created in November of 2023 that made use of [Ollama](https://ollama.ai) & GPT4All to chat with users. Later converted into a HAL 9000 chat bot and fizzled out by the 27th of November, making way for a new version of EpicOS.
 
 ### 2024
 
