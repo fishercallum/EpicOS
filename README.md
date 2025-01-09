@@ -76,7 +76,7 @@ Thanks to the following individuals for their contributions:
 - [Anon64](https://github.com/Anon64) - Help with code, inspiration
 - Ham's Music - Help with code, suggestions
 - [ ۣۜCharly](https://github.com/charleprr) - Inspiration
-- JPDLD	- Suggestions, inspiration
+- [JPDLD](https://github.com/JPDLD)	- Suggestions, inspiration
 - Chris - Suggestions
 - [Ste-Art](https://github.com/ste-art) - Inspiration (NMPB++)
 - [Brandon Lockaby](https://github.com/brandon-lockaby) - Multiplayer Piano
