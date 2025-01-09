@@ -27,6 +27,10 @@ This repository homes all published versions of the bot.
 
 - A Node.js version of EpicOS from 2021.
 
+#### EpicOS 2023
+
+- A Node.js version of EpicOS created on the 27th of November 2023. Replaced by Requests for Multiplayer Piano.
+
 ## Extras
 
 ### 2017
