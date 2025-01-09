@@ -31,7 +31,7 @@ This repository homes all published versions of the bot.
 
 #### EpicOS 2023
 
-- A Node.js version of EpicOS created on the 27th of November 2023. Replaced by Requests for Multiplayer Piano.
+- A Node.js version of EpicOS created on the 27th of November 2023. Replaced by [Requests](https://github.com/slowstone72/EpicOS?tab=readme-ov-file#requests).
 
 ## Extras
 
