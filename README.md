@@ -69,6 +69,8 @@ This repository homes all published versions of the bot.
 
 - A Node.js MIDI player bot that replaced EpicOS on the 10th of November 2024. Users can play, upload and stop MIDI files of their choice.
 
+For more old MPP code, see the [2017.10.07 archive](https://github.com/slowstone72/2017-10-07-mpp-archive).
+
 ## Thanks
 
 Thanks to the following individuals for their contributions:
