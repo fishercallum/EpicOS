@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      1.0.0
+// @version      1.0.1
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -23,7 +23,7 @@
 
 /*
 	"EpicOS (v1) - Rewritten"
-	2024.12.21 - 2025.01.07
+	2024.12.21 - 2025.01.09
 
 	This is a rewrite of the original 2015 web browser version of EpicOS. I have:
 	- Compiled separate message listeners into one
@@ -65,7 +65,10 @@
 
 const startEOS = () => {
 
-	console.log('[EpicOS (v1) - Rewritten v1.0.0] Running.');
+	let version = '1.0.1';
+	let editDate = '2025.01.09';
+
+	console.log(`[EpicOS (v1) - Rewritten v${version}] Running.`);
 
 	// User-defined settings:
 
@@ -194,7 +197,7 @@ const startEOS = () => {
 				sendMessage(toBinary(input));
 				break;
 			case 'about':
-				sendMessage('EpicOS (v1) [2015] - Rewritten v1.0.0 | 2024.12.21 - 2025.01.07 | Source: https://greasyfork.org/scripts/521353');
+				sendMessage(`EpicOS (v1) [2015] - Rewritten v${version} | 2024.12.21 - ${editDate} | Source: https://greasyfork.org/scripts/521353`);
 				break;
 				// Private commands:
 			case 'welcome':
