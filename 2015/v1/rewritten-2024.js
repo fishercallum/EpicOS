@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      1.0.3
+// @version      1.0.4
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -76,7 +76,7 @@ const startEOS = () => {
 
 	let selfID = MPP.client.getOwnParticipant()._id; // Your _ID on Multiplayer Piano
 
-	let version = '1.0.3';
+	let version = '1.0.4';
 	let editDate = '2025.01.09';
 
 	console.log(`[EpicOS (v1) - Rewritten v${version}] Running.`);
@@ -150,7 +150,7 @@ const startEOS = () => {
 				sendMessage(`Hi, ${name}. Your _ID is '${_id}'. ${_id === msg.p.id ? '' : 'Your ID is: \'' + msg.p.id + '\'. '}Your colour is ${color} (${new Color(color).getName()}). That's all I have!`);
 				break;
 			case 'lol':
-				sendMessage(`${name} laughs so hard they begin to choke. *Hands ${name} a glass of water.*`);
+				sendMessage(`${name.startsWith(cmdChar) ? '...' + name : name} laughs so hard they begin to choke. *Hands ${name} a glass of water.*`);
 				break;
 			case 'say':
 			case 'echo':
