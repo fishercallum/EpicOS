@@ -61,7 +61,7 @@ This repository homes all published versions of the bot.
 
 #### /talk
 
-- A Node.js bot created in November of 2023 that made use of [Ollama](https://ollama.ai) & GPT4All to chat with users. Later converted into a HAL 9000 chat bot and fizzled out by the 27th of November, making way for a new version of EpicOS.
+- A Node.js bot created in November of 2023 that made use of [Ollama](https://ollama.ai) & [GPT4All](https://gpt4all.io) to chat with users. Later converted into a HAL 9000 chat bot and fizzled out by the 27th of November, making way for a new version of EpicOS.
 
 ### 2024
 
