@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      1.0.4
+// @version      1.0.5
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -76,7 +76,7 @@ const startEOS = () => {
 
 	let selfID = MPP.client.getOwnParticipant()._id; // Your _ID on Multiplayer Piano
 
-	let version = '1.0.4';
+	let version = '1.0.5';
 	let editDate = '2025.01.09';
 
 	console.log(`[EpicOS (v1) - Rewritten v${version}] Running.`);
@@ -127,7 +127,7 @@ const startEOS = () => {
 	MPP.client.on('a', msg => {
 
 		selfID = MPP.client.getOwnParticipant()._id;
-		// if (msg.p._id === selfID) return;
+
 		if (!msg.a.startsWith(cmdChar) || msg.a === cmdChar) return;
 
 		let name = msg.p.name;
@@ -217,8 +217,6 @@ const startEOS = () => {
 		}
 
 	});
-
-	// MPP.client.on("a", function(msg) { if (msg.a.split(' ')[0] == "hi" || msg.a.split(' ')[0] == "hey" || msg.a.split(' ')[0] == "hello") { if (msg.p._id == selfID) {} else { sendMessage('EpicOS: Hi there, ' + msg.p.name + '!, how may i help you?') } }})
 
 	// Listen for new users:
 
