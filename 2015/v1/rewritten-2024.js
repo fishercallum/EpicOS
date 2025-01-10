@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      1.0.8
+// @version      1.0.9
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -77,7 +77,7 @@ const startEOS = () => {
 
 	let selfID = MPP.client.getOwnParticipant()._id; // Your _ID on Multiplayer Piano
 
-	let version = '1.0.8';
+	let version = '1.0.9';
 	let editDate = '2025.01.10';
 
 	console.log(`[EpicOS (v1) - Rewritten v${version}] Running.`);
@@ -226,7 +226,7 @@ const startEOS = () => {
 		if (welcomeUsers) sendMessage(`Welcome, ${msg.name}! Feel free to try out my commands by sending ${cmdChar}help`);
 	});
 
-	const toBinary = input => {
+	let toBinary = input => {
 		let output = '';
 		for (let i = 0; i < input.length; i++) {
 			let e = input[i].charCodeAt(0);
@@ -244,11 +244,11 @@ const startEOS = () => {
 		return output;
 	}
 
-	const encode = input => {
+	let encode = input => {
 		return window.btoa(unescape(encodeURIComponent(input)));
 	}
 
-	const decode = input => {
+	let decode = input => {
 		return decodeURIComponent(escape(window.atob(input)));
 	}
 }
