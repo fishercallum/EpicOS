@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
 // @namespace    https://github.com/slowstone72/EpicOS
-// @version      1.0.7
+// @version      1.0.8
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
 // @author       Callum Fisher <cf.fisher.bham@gmail.com>
@@ -10,6 +10,7 @@
 // @match        *://multiplayerpiano.com/*
 // @match        *://multiplayerpiano.net/*
 // @match        *://multiplayerpiano.org/*
+// @match        *://*.multiplayerpiano.dev/*
 // @match        *://piano.mpp.community/*
 // @match        *://mpp.autoplayer.xyz/*
 // @match        *://mpp.hyye.tk/*
@@ -23,7 +24,7 @@
 
 /*
 	"EpicOS (v1) - Rewritten"
-	2024.12.21 - 2025.01.09
+	2024.12.21 - 2025.01.10
 
 	This is a rewrite of the original 2015 web browser version of EpicOS. I have:
 	- Compiled separate message listeners into one
@@ -76,8 +77,8 @@ const startEOS = () => {
 
 	let selfID = MPP.client.getOwnParticipant()._id; // Your _ID on Multiplayer Piano
 
-	let version = '1.0.7';
-	let editDate = '2025.01.09';
+	let version = '1.0.8';
+	let editDate = '2025.01.10';
 
 	console.log(`[EpicOS (v1) - Rewritten v${version}] Running.`);
 
