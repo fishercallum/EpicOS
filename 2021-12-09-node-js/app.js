@@ -9,7 +9,7 @@
 	You might notice that the related messages are commented out as they became pretty annoying.
 	The main app.js was archived & replaced while commands continued to be used & updated, so this is the only archived file.
 
-	Repository: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/cffisher/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 

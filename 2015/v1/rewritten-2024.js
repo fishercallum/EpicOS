@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         EpicOS (v1) - Rewritten
-// @namespace    https://github.com/slowstone72/EpicOS
+// @namespace    https://github.com/cffisher/EpicOS
 // @version      1.0.9
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
@@ -34,7 +34,7 @@
 
 	Userscript: https://greasyfork.org/scripts/521353
 	
-	Repository: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/cffisher/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 

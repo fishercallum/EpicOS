@@ -4,4 +4,4 @@ This section features projects closely related to but separate from EpicOS from 
 
 ## Directory
 
-For a comprehensive list of projects, see the [project directory](https://github.com/slowstone72/EpicOS).
+For a comprehensive list of projects, see the [project directory](https://github.com/cffisher/EpicOS).

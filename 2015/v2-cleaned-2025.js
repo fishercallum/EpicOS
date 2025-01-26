@@ -7,7 +7,7 @@
 	- Removed (some) bloat including some external scripts
 	Other than that, the original (bad) code structure remains.
 
-	Repository: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/cffisher/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 

@@ -3,7 +3,7 @@
 	log.js - For handling recording of session logs.
 	2020.07.22
 
-	Repository: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/cffisher/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 

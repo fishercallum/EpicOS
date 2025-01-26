@@ -5,7 +5,7 @@
 
 	An unfinished Node.js rewrite of EpicOS (v10).
 
-	Repository: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/cffisher/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 

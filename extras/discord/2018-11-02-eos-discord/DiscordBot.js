@@ -10,7 +10,7 @@
 	- Removed secrets (user ids, role ids and bot tokens, etc.)
 	Other than that, the original (bad) code structure remains.
 
-	Repository: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/cffisher/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 

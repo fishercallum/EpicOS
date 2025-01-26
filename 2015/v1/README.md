@@ -47,4 +47,4 @@ The following variables can be set towards the top of the userscript:
 
 ## Directory
 
-You can find a list of all published EpicOS projects in the [project directory](https://github.com/slowstone72/EpicOS).
+You can find a list of all published EpicOS projects in the [project directory](https://github.com/cffisher/EpicOS).

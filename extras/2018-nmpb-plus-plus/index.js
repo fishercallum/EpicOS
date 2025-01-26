@@ -8,7 +8,7 @@
 	It featured a web controller of some description, which might've been my first time trying to create any kind of website.
 	It's published here in its tacked-together glory for archival purposes.
 	
-	Repository: https://github.com/slowstone72/EpicOS
+	Repository: https://github.com/cffisher/EpicOS
 
 	Callum Fisher <cf.fisher.bham@gmail.com>
 
