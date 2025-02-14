@@ -7,7 +7,7 @@
 
 	Repository: https://github.com/cffisher/EpicOS
 
-	Callum Fisher <cf.fisher.bham@gmail.com>
+	Callum Fisher <fishercallum@proton.me>
 
 	This is free and unencumbered software released into the public domain.
 

@@ -8,7 +8,7 @@
 
     A directory of all published EpicOS projects is available: https://pastebin.com/QGyDuUGe
 
-    Callum Fisher <cf.fisher.bham@gmail.com>
+    Callum Fisher <fishercallum@proton.me>
 
     This is free and unencumbered software released into the public domain.
 

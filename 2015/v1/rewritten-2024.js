@@ -4,7 +4,7 @@
 // @version      1.0.9
 // @license      Unlicense
 // @description  A rewrite of the original 2015 web browser version of EpicOS for Multiplayer Piano.
-// @author       Callum Fisher <cf.fisher.bham@gmail.com>
+// @author       Callum Fisher <fishercallum@proton.me>
 // @match        *://mppclone.com/*
 // @match        *://mpp.8448.space/*
 // @match        *://multiplayerpiano.com/*
@@ -36,7 +36,7 @@
 	
 	Repository: https://github.com/cffisher/EpicOS
 
-	Callum Fisher <cf.fisher.bham@gmail.com>
+	Callum Fisher <fishercallum@proton.me>
 
 	This is free and unencumbered software released into the public domain.
 
