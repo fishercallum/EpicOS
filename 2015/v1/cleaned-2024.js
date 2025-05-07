@@ -8,9 +8,9 @@
 	Other than that, the original (bad) code structure remains.
 
 	A rewritten version is available as a userscript: https://greasyfork.org/scripts/521353
-	Repository: https://github.com/cffisher/EpicOS
+	Repository: https://github.com/fishercallum/EpicOS
 
-	Callum Fisher <fishercallum@proton.me>
+	callum fisher - fishercallum@proton.me
 
 	This is free and unencumbered software released into the public domain.
 
@@ -106,4 +106,4 @@ MPP.client.on("a", function(msg) { if( msg.a == cmdChar + "welcome on") if (msg.
 
 
 
-MPP.client.on("a", function(msg) { if( msg.a == cmdChar + "clear") if (msg.p._id == selfId2) { MPP.chat.clear();MPP.chat.send('For those people that give a shit (Which i can guarantee would be nobody.), the chat was cleared locally.');} else { MPP.chat.send('Sorry, this command is owner only.') } });
+MPP.client.on("a", function(msg) { if( msg.a == cmdChar + "clear") if (msg.p._id == selfId2) { MPP.chat.clear();MPP.chat.send('For those that care (Which i can guarantee would be nobody.), the chat was cleared locally.');} else { MPP.chat.send('Sorry, this command is owner only.') } });
